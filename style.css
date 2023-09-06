@@ -15,12 +15,10 @@ html, body {
 }
 
 section {
-    /*background-color: #2e2e2e;*/
     padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100%;
     margin: 0 auto;
     width: 65%;
     /*position: absolute;
@@ -35,11 +33,7 @@ h1 {
 h2 {
     font-size: 1.3em;
 }
-.rainbow {
-    /*background-image: linear-gradient(to right, #E95678,#FAB795,#29D398,#59E3E3,#26BBD9,#EE64AE); 
-    -webkit-background-clip: background;
-    -webkit-background-fill-color: transparent;  
-    animation: move 35s linear infinite;*/
+.button {
     background-color: #232530;
     box-shadow: 0.5rem 0.5rem #29D398;
     border: 0;
@@ -47,12 +41,16 @@ h2 {
     font-family: 'TheGoodMonolith', sans-serif;
     font-size: 1em;
     color: #29D398;
+    transition: box-shadow 0.2s;
 }
 
-.rainbow:active {
-    box-shadow: 0.3rem 0.3rem #29D398;
+.button:hover {
+    box-shadow: 0.3rem 0.3em #29D398;
 }
 
+.button:active {
+    padding: 0.45rem;
+}
 @keyframes move {
     to {
           background-position: 1000vh;
