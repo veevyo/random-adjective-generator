@@ -41,15 +41,10 @@ h2 {
     font-family: 'TheGoodMonolith', sans-serif;
     font-size: 1em;
     color: #29D398;
-    transition: box-shadow 0.2s;
-}
-
-.button:hover {
-    box-shadow: 0.3rem 0.3em #29D398;
 }
 
 .button:active {
-    padding: 0.45rem;
+    box-shadow: 0.3rem 0.3em #29D398;
 }
 @keyframes move {
     to {
